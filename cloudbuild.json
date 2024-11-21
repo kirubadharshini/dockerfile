@@ -12,7 +12,7 @@
             "--source=./main.go",
            "--trigger-http",
            "--runtime=nodejs18",
-           "--project=taas-automation"
+           "--project=taas-automation",
            "options": {
                 "logging": "CLOUD_LOGGING_ONLY"
            }
