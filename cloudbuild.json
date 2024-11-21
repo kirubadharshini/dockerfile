@@ -13,6 +13,9 @@
            "--trigger-http",
            "--runtime=nodejs18",
            "--project=taas-automation"
+           "options": {
+                "logging": "CLOUD_LOGGING_ONLY"
+           }
         ]
       }
      ]
