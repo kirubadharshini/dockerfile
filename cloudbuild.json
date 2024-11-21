@@ -11,7 +11,7 @@
            "--region=us-central1",
             "--source=./main.go",
            "--trigger-http",
-           "--runtime=nodejs18",
+           "--runtime=go120",
            "--project=taas-automation",
            "options": {
                 "logging": "CLOUD_LOGGING_ONLY"
