@@ -1,22 +1,22 @@
 {
-    "steps": [
-     {
-        "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
-        "args": [
-          "gcloud",
-          "functions",
-          "deploy",
-          "HelloWorld",
-           "--gen2",
-           "--region=us-central1",
-            "--source=./main.go",
-           "--trigger-http",
-           "--runtime=go120",
-           "--project=taas-automation",
-           "options": {
-                "logging": "CLOUD_LOGGING_ONLY"
-           }
-        ]
+  "steps": [
+    {
+      "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
+      "args": [
+        "gcloud",
+        "functions",
+        "deploy",
+        "HelloWorld",
+        "--gen2",
+        "--region=us-central1",
+        "--source=.",
+        "--trigger-http",
+        "--runtime=go120",
+        "--project=taas-automation"
+      ],
+      "options": {
+        "logging": "CLOUD_LOGGING_ONLY"
       }
-     ]
-   }
+    }
+  ]
+}
