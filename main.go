@@ -1,10 +1,11 @@
-  package main
+package function
 
-  import (
-      "fmt"
-  )
+import (
+    "fmt"
+    "net/http"
+)
 
-  func main() {
-      fmt.Println("Hello, universe!")
-  }
-  
+// Entry point for the Cloud Function
+func HelloWorld(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprint(w, "Hello, World!")
+}
