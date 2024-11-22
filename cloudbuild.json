@@ -11,7 +11,6 @@
           "--region=us-central1",
           "--source=./cb_storage",
           "--trigger-bucket=taas-frontend-storage",
-          "--trigger-event-filters=type=google.cloud.storage.object.v1.finalized",
           "--runtime=python3.10",
           "--allow-unauthenticated",
           "--project=taas-automation"
