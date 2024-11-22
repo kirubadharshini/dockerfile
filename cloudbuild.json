@@ -9,7 +9,7 @@
           "HelloWorld",
           "--gen2",
           "--region=us-central1",
-          "--source=./cbt",
+          "--source=./cb_storage",
           "--trigger-http",
           "--runtime=go122",
           "--allow-unauthenticated",
