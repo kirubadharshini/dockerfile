@@ -3,9 +3,19 @@ package function
 import (
 	"fmt"
 	"net/http"
+	"sync"
 )
 
-// Entry point for the Cloud Function
+var (
+	counter int
+	mu      sync.Mutex // To prevent race conditions
+)
+
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprint(w, "Hello, World! storage")
+	mu.Lock()
+	counter++
+	count := counter
+	mu.Unlock()
+
+	fmt.Fprintf(w, "Hello, World! This function has run %d times.", count)
 }
