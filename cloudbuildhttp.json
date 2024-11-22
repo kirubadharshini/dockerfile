@@ -1,0 +1,23 @@
+{
+  "steps": [
+    {
+      "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
+      "args": [
+        "gcloud",
+        "functions",
+        "deploy",
+        "HelloWorld",
+        "--gen2",
+        "--region=us-central1",
+        "--source=./cbt",
+        "--trigger-http",
+        "--runtime=go122",
+        "--allow-unauthenticated",
+        "--project=taas-automation"
+      ]
+    }
+  ],
+  "options": {
+    "logging": "CLOUD_LOGGING_ONLY"
+  }
+}

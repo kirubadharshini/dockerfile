@@ -10,7 +10,7 @@
           "--gen2",
           "--region=us-central1",
           "--source=./cbt",
-          "--trigger-http",
+          "--trigger-bucket=taas-frontend-storage",
           "--runtime=go122",
           "--allow-unauthenticated",
           "--project=taas-automation"
