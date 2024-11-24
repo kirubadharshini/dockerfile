@@ -11,7 +11,7 @@
         "--region=us-central1",
         "--source=./cb_pubsub",
         "--trigger-topic=cbt-tpoic",
-        "--runtime=go122",
+        "--runtime=python310",
         "--allow-unauthenticated",
         "--project=taas-automation"
       ]
