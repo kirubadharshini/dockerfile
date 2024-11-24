@@ -6,7 +6,7 @@
         "gcloud",
         "functions",
         "deploy",
-        "HelloWorld",
+        "hello_pubsub",
         "--gen2",
         "--region=us-central1",
         "--source=./cb_pubsub",
