@@ -9,8 +9,8 @@
         "HelloWorld",
         "--gen2",
         "--region=us-central1",
-        "--source=./cbt",
-        "--trigger-http",
+        "--source=./cb_pubsub",
+        "--trigger-topic=cbt-tpoic",
         "--runtime=go122",
         "--allow-unauthenticated",
         "--project=taas-automation"
