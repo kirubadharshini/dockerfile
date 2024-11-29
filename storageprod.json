@@ -10,7 +10,7 @@
           "--gen2",
           "--region=us-central1",
           "--source=./cb_storage_prod",
-          "--trigger-bucket=bucket-tass-automation-92702-dev",
+          "--trigger-bucket=trigger-bucket",
           "--runtime=python310",
           "--allow-unauthenticated",
           "--project=taas-automation"
