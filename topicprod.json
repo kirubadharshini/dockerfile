@@ -1,0 +1,23 @@
+{
+  "steps": [
+    {
+      "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
+      "args": [
+        "gcloud",
+        "functions",
+        "deploy",
+        "hello_pubsub_prod",
+        "--gen2",
+        "--region=us-central1",
+        "--source=./cb_pubsub_prod",
+        "--trigger-topic=topic-tass-automation-prod",
+        "--runtime=python310",
+        "--allow-unauthenticated",
+        "--project=taas-automation"
+      ]
+    }
+  ],
+  "options": {
+    "logging": "CLOUD_LOGGING_ONLY"
+  }
+}
